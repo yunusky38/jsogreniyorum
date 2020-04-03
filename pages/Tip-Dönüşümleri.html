@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	 <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<h2>Javascript Veri Tipleri Arası Geçiş, Veri Tipi Dönüşümü</h2>
+			<p>Javascript dinamik bir dildir. Bunun anlamı, bir değişken tanımlanırken, veri tipini belirtme zorunluluğunun olmamasıdır. Buda bir değişkenin veri tipinin kodun çalışması esnasında ihtiyaç olunan veri tipe otomatik dönüştürülmesi anlamına gelir.</p>
+			<p>Başlıca Veri Tipleri Arasında Temel Dönüştürme İşlemleri</p>
+			<p><strong><em>sayi.toString() :</em> </strong></p>
+			<p>Sayıyı String ifadeye çevirir&nbsp;<em>(Number to String).</em></p>
+			<p><strong><em>parseInt(string) :</em> </strong></p>
+			<p>String olarak gönderilen metinsel değeri sayıya çevirir. String ifadesinde ondalık sayi var ise onu siler&nbsp;<em>(String to Number).</em></p>
+			<p><strong><em>parseFloat(string):</em> </strong></p>
+<p>String olarak gönderilen metinsel değeri sayayı çevirir. Ondalık ifade aynen döndürülür&nbsp;<em>(String to Number).</em></p>
+<p><strong><em>array.toString():</em> </strong></p>
+<p>Array olarak tanımlanan bir değişkeni string ifadeye çevirir&nbsp;<em>(Array to String).</em></p>
+<p><strong><em>string.split(karakter):</em> </strong></p>
+<p>String olarak tanımlanmış bir ifade belirtilen karakterin içindeki geçtiği yerlerden array ifadeye çevirir&nbsp;<em>(String to Array).</em></p>
+<p><strong><em>json.stringify()</em> :</strong></p>
+<p>Object olarak tanımlanan karakter veya sayısal nesneyi string ifadeye çevirir&nbsp;<em>(JSON to String).<br>
+</em></p>
+<p><strong><em>json.parse(string):</em></strong></p>
+<p>String olarak tanımlanan metinsel JSON değerleri JSON nesnesine çevirir&nbsp;<em>(String to JSON veya parse JSON).</em></p>
+<p>Program satırı içindeki dönüşümlere örnekler:</p>
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 222px; height: 22px;"> var yanit = 42;   </textarea>
+<p>daha sonra aynı değişkene string bir değer atanması durumunda javascript herhangi bir uyarı veya hata vermez.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 396px; height: 30px;"> yanit = "Hoşçakal, balık için teşekkürler...";   </textarea>
+
+<p>Bir string ve sayının toplama işlemine konulması ile JavaScript sayı içeren değişkeni otomatik olarak string ifadeye çevirir ve eklenecek string ile birleştirir.</p>
+
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 404px; height: 50px;"> x = "Cevap " + 42 // "Cevap 42"  
+y = 42 + " cevaptır." // "42 cevaptır."   </textarea>
+
+<p>Toplama işlemi dışındaki diğer işlemlerde JavaScript otomatik olarak tür dönüşümü yapmaz.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 404px; height: 50px;"> "37" - 7 // 30  
+"37" + 7 // "377"  </textarea>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

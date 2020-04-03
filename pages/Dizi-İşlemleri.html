@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	 <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<h1>JavaScript Dizi İşlemleri</h1>
+			<p>Dizi(array) bütün dillerde olduğu gibi JavaScript dilinde de birçok değişkeni içerisinde barındırır. Diziler köşeli parantez[] ile tanımlanır ve dizi elemanları virgül(,) ile ayrılır. Aşağıda örnek bir dizi tanımlayalım.</p>
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 237px; height: 65px;"> var dizi1 = [1, 2, 3];
+var dizi2 = ["istanbul","ankara","izmir"]; </textarea>
+<p>Yukarıda iki farklı türde dizi tanımladık. İlk dizimiz sayısal değerler barındırdığı için içerisinde bulunan ögeler tırnak(”) işareti ile ayrılmamıştır. İkinci dizi ise metin türünde bir dizi olduğu için  ögeler arasında tırnak(“) işaretine yer verilmiştir.</p>
+<p>Dizi oluştururken ögeler arasında karışıklığı önlemek için diziler aşağıdaki gibi tanımlanır.</p>
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 179px; height: 107px;"> var sehir = {
+"İstanbul",
+"Ankara",
+"İzmir",
+}; </textarea>
+
+<h3>Dizi Değerlerini Çağırmak</h3>
+<p>Dizi değerlerinin her birinin kendine özgü bir indis numarası bulunur. Bu indis numaralarını istenilen dizi ögesini çağırmak için kullanırız. Aşağıda bir dizi örneği tanımlayalım ve herhangi bir ögesini indis numarası ile çağıralım.</p>
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 295px; height: 111px;"> var isimler=["Hakan","Hasan","Erkan","Samet"];
+var isim=isimler[1];
+
+// Ekran Çıktısı: Hasan
+ </textarea>
+<p><strong>Önemli:</strong> Yukarıda “1” indis numaralı ögeyi çağırdık. İlk sırada “Hakan” olduğu halde “Hasan” sonucunu aldık. Dizi içerisinde indis numaraları “0” değerinden başlar. O yüzden “1” indisi “Hasan” ögesinin indis numarasıdır.</p>
+<h3>Dizideki Öge Satısını Bulmak</h3>
+<p>Tanımladığımız bir dizinin kaç ögeden oluştuğunu <strong>length</strong> yöntemini kullanarak buluruz.</p>
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 355px; height: 101px;"> var markalar= ["Honda","Peugeot","Mazda"];
+var ögesayi= markalar.length;
+
+// Ekran Çıktısı: 3 </textarea>
+<h3>Diziye Değer Eklemek</h3>
+<p>Diziye değer eklemek için 2 farklı yöntem kullanılır. Aşağıda kod üzerinde bu yöntemleri daha detaylı inceleyelim:</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 337px; height: 105px;"> var dizi1=["Ahmet","Mehmet","Hakan"];
+// Yöntem 1
+dizi1.[dizi1.length]="Mustafa";
+// Yöntem 2
+dizi1[10]="Samet"; </textarea>
+<p>Yukarıdaki örnekte ilk yöntemde length değeri 3’tür. 3 indis numarası boş olduğu için yeni eklenen öge 3 ögesinden sonra eklenir. İkinci yöntemde ise 10 değeri keyfi olarak tanımlanmıştır. 10 indis numarasına sahip değer boş olacağı için öge eklenirken hiçbir problem oluşturmaz.</p>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

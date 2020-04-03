@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	 <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<td bgcolor="#F5F5F5" align="justify" valign="top">
+			
+
+<center><h2><b>10. OLAYLAR</b></h2></center><br>
+
+<p>Bir olayın oluşması, mevcut durumda bir değişikik olması anlamına gelir.Javascript açısından kullanıcının
+bir yere tıklaması, mousunu oynatması, sayfanın yüklenmesi, sayfadan çıkılması hep birer olay olarak
+yorumlanır. Olayların genel kullanımları:</p>
+
+<p></p><table bgcolor="silver" id="table3">
+<tbody><tr>
+	<td>&lt;form name=isim olayAdı="ilgiliFonksiyon()"&gt;</td>
+</tr>
+</tbody></table>
+<p></p>
+<p>şeklindedir. Bu kullanımı her olay için verilen örnekleri inceleyerek daha iyi anlayabilirsiniz.
+
+
+JavaScript'de olaylar ve adlarını aşağıda görmektesiniz.
+
+
+</p><ol>
+<p><b></b></p><li><b>onClick</b>
+<p>Mouse'un tıklanması olayıdır. Tıklanabilecek, dolayısıyla onClick metodu'nun kullanılabileceği
+yerler submit, reset, buton, radio, checkbox ve link nesneleridir.
+</p><p>Aşağıdaki örnekte onClick ile bir text nesnesine yazı yazdıracağız.</p>
+<p></p><table bgcolor="silver" id="table4">
+<tbody><tr>
+	<td>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&lt;title&gt;onClick&lt;/title&gt;<br> 
+        &lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;script 
+        language="Javascript1.2"&gt;<br>&lt;!--<br>function 
+        yazdir(formNesnesi)<br>{<br>formNesnesi.value="Bu işi onClick ile 
+        yaptık!"<br>}<br>--&gt;<br>&lt;/script&gt;<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body 
+        &gt;<br>&lt;form name="form1" &gt;<br>&lt;input type="Button" 
+        value="Tıklayın" onClick="yazdir(document.form1.mesaj)"&gt;<br>&lt;input 
+        type="text" name="mesaj" 
+        value="1"&gt;<br>&lt;/form&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+
+<p><b></b></p></li><li><b>onMouseOver, onMouseOut</b>
+<p>Mouse'un imleçinin bir nesne üzerinde olması onMouseOver, o nesne üzerinde olmaması onMouseOut
+olayı olarak adlandırılır.
+</p><p>Aşağıdaki örnekteki linkin üzerine gelince yeni bir pencere açılacak, açılan bu pencere mouse'u
+linkin üzerinden çekince kapanacak.</p>
+<p></p><table bgcolor="silver" id="table5">
+<tbody><tr>
+	<td>&lt;html&gt;<br>&lt;head&gt;
+        <br>&nbsp;&lt;title&gt;onMouseOver,onMouseOut&lt;/title&gt;<br>&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;script 
+        language="Javascript1.2"&gt;<br>function 
+        ustunde()<br>&lt;!--<br> 
+        {<br>yenipencere=window.open("oneri","oneriPenceresi","toolbar=0,width=200,height=200")<br>yenipencere.document.writeln("&lt;h3&gt;Yeni 
+        sayfa!&lt;/h3&gt;")<br>}<br>function 
+        disinda()<br>{<br>yenipencere.close()<br>}<br>--&gt;<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;a 
+        href="#" onMouseover="ustunde()" 
+        onMouseout="disinda()"&gt;&lt;b&gt;Ustüme 
+        Gel!&lt;/b&gt;&lt;/a&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+
+<p><b></b></p></li><li><b>onLoad, onUnLoad</b>
+<p>web sayfasının yüklenmesi onLoad, sayfadan çıkılması ise onUnLoad olayına karşılık gelir.
+</p><p>Aşağıdaki örnekte sayfa yüklenince bize browser'ımızın hangisi olduğunu söyleyecek, çıkarken
+ise bir uğurlama mesajı verecek</p>
+
+<p></p><table bgcolor="silver" id="table6">
+<tbody><tr>
+	<td>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&lt;title&gt;onLoad, 
+        onUnLoad&lt;/title&gt;<br>&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;script 
+        language="Javascript1.2"&gt;<br>&lt;!--<br>function 
+        hangiBrowser()<br>{<br>var tur =navigator.appName+" 
+        "+navigator.appVersion<br>if(tur.substring(0,8)=="Netscape")<br>alert("Netscape 
+        kullaniyorsunuz")<br>else 
+        if(tur.substring(0,9)=="Microsoft")<br>alert("Explorer 
+        kullaniyosunuz!")<br>else<br>alert("Ne tur browser kullandiginizi 
+        anlayamadik!")<br>}<br>function 
+        mesaj()<br>{<br>alert("Hoşçakalın!")<br>}<br>--&gt;<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body 
+        onload="hangiBrowser()" 
+        onunload="mesaj()"&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+
+<p><b></b></p></li><li><b>onSubmit, onReset</b>
+<p>Form'ların vazgeçilmez ögeleri olan submit butonuna basılması onSubmit, reset butonuna
+basılması onReset olayıyla tanımlanır.
+</p><p>Aşağıdaki örnek formu gönderirken ve silerken bizim onayımızı isteyecek.</p>
+<p></p><table bgcolor="silver" id="table7">
+<tbody><tr><td>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&lt;title&gt;onSubmit,onReset&lt;/title&gt;<br>&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;script 
+        language="JavaScript1.2"&gt;<br>&lt;!--<br>function 
+        dogruMu()<br>{<br>return confirm("Bilgilerin doğru olduğuna emin 
+        misiniz?")<br>}<br>function sor()<br>{<br>return confirm("Silmek 
+        istediğinize emin 
+        misiniz?")<br>}<br>--&gt;<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;form 
+        name="form1" onsubmit="return dogruMu()" onReset="return sor()" 
+        method="post"&gt;<br>&lt;p&gt;&lt;h3&gt;Isim&lt;/h3&gt;&lt;/p&gt;<br>&lt;input 
+        type="text" size="30" 
+        name="isim"&gt;<br>&lt;p&gt;&lt;h3&gt;adres&lt;/h3&gt;&lt;/p&gt;<br>&lt;input 
+        type="text" size="30" 
+        name="adres"&gt;<br>&lt;p&gt;&lt;h3&gt;telefon#&lt;/h3&gt;&lt;/p&gt;<br>&lt;input 
+        type="text" size="30" name="telefon"&gt;<br>&lt;p&gt;&lt;input 
+        type="Submit"&nbsp; value="Gonder"&gt;<br>&lt;input type="Reset" 
+        value="Sil"&gt;&lt;/p&gt;<br>&lt;/form&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+
+<p><b></b></p></li><li><b>onChange</b>
+<p>Text veya textarea unsurlarına birşey yazılması ya da select unsurunda bir seçim yapılması onChange olayına 
+karşılık gelir. 
+</p><p>Aşağıda onChange ile yapılmış bir örnek görüyoruz.</p>
+<p></p><table bgcolor="silver" id="table8">
+<tbody><tr>
+	<td>&lt;html&gt; 
+        <br>&lt;head&gt;<br>&nbsp;&lt;title&gt;onChange&lt;/title&gt;<br>&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;script 
+        language="JavaScript1.2"&gt;<br>&lt;!--<br>function 
+        yaz(secnesnesi){<br>return 
+        secnesnesi.options[secnesnesi.selectedIndex].value}<br>--&gt;<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;form 
+        name="form1"&gt;<br>&lt;select name="mesaj" size="3"&nbsp; 
+        onchange="alert(yaz(this.form.mesaj))"&gt;<br>&lt;option name="mesaj" 
+        value="Bu"&gt;mesaj1<br>&lt;option name="mesaj" 
+        value="program"&gt;mesaj2<br>&lt;option name="mesaj" value="onChange 
+        komutu ile yapılmıştır"&gt;mesaj3<br>&lt;/select&gt; <br>&lt;/form&gt; 
+        <br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+
+<p><b></b></p></li><li><b>onFocus, onBlur</b>
+<p>Sayfanızdaki Text , Textarea veya Select unsurlarının üzerine tıklandığında onFocus olayı gerçekleşir.
+Bu durumda mouse'un başka bir yeri tıklaması da onBlur olayına karşılık gelir. Yani kullanıcı
+dikkatini bu üç unsurdan birine verdiği zaman browser'a bir iş yaptırabilriz; aynı şekilde
+kullanıcının dikkatinin başka yöne kayması halinde yapılacak başka bir iş tanımlayabiliriz. 
+</p><p></p><table bgcolor="silver" id="table9">
+<tbody><tr>
+	<td>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&lt;title&gt;onFocus,onBlur&lt;/title&gt;&lt; 
+        BR&gt;&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;script 
+        language="JavaScript1.2"&gt;<br>&lt;!--<br>function 
+        dogru()<br>{<br>document.form1.mesaj.value="Lütfen hata 
+        yapmayın!"<br>}<br>function 
+        sor()<br>{<br>document.form1.mesaj.value="isminiz 
+        alındı"<br>}<br>--&gt;<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;form 
+        name="form1"&nbsp; method="post"&gt;<br>&lt;p&gt;&lt;h3&gt;Lütfen 
+        isminizi yazınız!&lt;/h3&gt;&lt;/p&gt;<br>&lt;input type="text" 
+        size="20" name="isim" onfocus="dogru()" 
+        onblur="sor()"&gt;<br>&lt;p&gt;&lt;input type="text" 
+        name="mesaj"&gt;&lt;/p&gt;<br>&lt;/form&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br></td>
+</tr>
+</tbody></table><p></p>
+
+<p><b></b></p></li><li><b>onAbort, onError</b>
+<p>Ziyaretçinin browser'ı sayfanızın bir kısmını veya tamamını yükleyemez, ya da sayfanızın 
+JavaScript veya HTML kodlarını yorumlayamazsa hata durumu oluşur, bu durumun adı JavaScript 
+dilinde onError'dur. OnAbort olayı ise ziyaretçi sayfanız tamamen yüklenmeden stop tuşuna basarsa 
+oluşur.
+</p>
+
+
+
+</li></ol>		
+		</td>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

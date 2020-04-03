@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	  <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<div class="article-content clearfix">
+	   
+   		<h1 >
+   			JavaScript Veri Türleri   		</h1>
+   
+	   
+   
+
+   	<div class="entry-content clearfix">
+   		<p>JavaScript dilinde birçok değişken türü bulunur.&nbsp; Bu değişken türleri içerisinde birçok veri tipi saklayabilir. Bu veri tiplerinden bazıları; sayısal, metin, mantıksal, dizeler ve objelerdir.</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;"><strong>String Veri Tipi(Metin)</strong></span></p>
+<p>String veri tipi içerisinde metinsel ifadeleri saklar. String veriler değişkenlere girilirken (“) tırnak işareti ya da (‘) kesme işareti kullanılır.</p>
+<p><strong><code>var isim=”lifeacode”;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // doğru kullanım</code></strong></p>
+<p><strong><code>var soyisim=’egitim sitesi’;&nbsp;&nbsp;&nbsp; // doğru kullanım</code></strong></p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;"><strong>Number Veri Tipi(Sayısal)</strong></span></p>
+<p>Numbers veri tipi içerisinde sayısal değerleri tutmak için kullanılır. Değerler tanımlanırken (“) çift tırnak veya (‘) tek tırnak işaretine ihtiyaç yoktur.</p>
+<p><strong><code>var a=1;&nbsp;&nbsp; // doğru kullanım</code></strong></p>
+<p><strong><code>var pi=3.14; &nbsp;&nbsp;// doğru kullanım ondalıklı sayı</code></strong></p>
+<p>Ondalıklı sayı değeri tanımlanırken (.) nokta işareti kullanılır.</p>
+<p><strong>&nbsp;</strong></p>
+<p><span style="color: #ff6600;"><strong>Boolean Veri Tipi(Mantıksal)</strong></span></p>
+<p>Bazı ifadeler sadece iki alternatiflidir. İfade ya doğrudur(true) ya da yanlıştır(false). Bu tip değişkenlere boolean ifadeler ismi verilir. Mantıksal veriler koşul gerektiren ifadeler için kullanılır.</p>
+<p><code><strong>var a = true;&nbsp; // doğru kullanım</strong></code></p>
+<p><code><strong>var b = false;&nbsp; // doğru kullanım</strong></code></p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;"><strong>Array Verisi(Dizi)</strong></span></p>
+<p>Dizi bir veri tipinde birden fazla değer içerir. Dizi oluşturulurken köşeli parantez kullanılır ve değerler (,) ile ayrılır.</p>
+<p><code><strong>var sehir=[“İstanbul”,” Ankara”, ”İzmir”];&nbsp; // Yazı dizisi</strong></code></p>
+<p><code><strong>var sayi=[ 11111, 222222, 333333];&nbsp;&nbsp; // Sayı dizisi</strong></code></p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;"><strong>Veri İkilileri (Nesneler)</strong></span></p>
+<p>Nesneler alt değişken verilerini içerisinde tutar. Alt değişkenler sıralanırken kıvrım parantezler kullanılır. Değişkenler virgüllerle ayrılarak yazılır.</p>
+<p><strong><code>var site = { &nbsp;isim:”lifeacode”, içerik:”eğitim” };&nbsp;&nbsp; // doğru kullanım</code></strong></p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;"><strong>Boş ve Tanımsız Veriler( Undefined &amp; Null )</strong></span></p>
+<p>JavaScript dilinde değer içermeyen değişkenler bulunur. Bu değişkenler veri içermezler. Veri içermeyen değişken oluşturulurken var degişken seklinde oluşturulur. Yani sadece değişken ismi yazılır. (=) eşittir operatörü kullanılmaz.</p>
+<p><strong><code>var sehir;&nbsp;&nbsp; // doğru kullanım, sehir değişkeni veri içermez.</code></strong></p>
+<p>Bazı durumlarda değişkenin içerisinde bulunan verinin silinmesi gerekir. Bunun için Null ifadesi kullanılır.</p>
+<p><strong><code>sehir = null;&nbsp; // doğru kullanım, sehir değişkeninin içerisindeki veri silinir.</code></strong></p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;"><strong>Veri Türünü Tespit Etmek (typeof)</strong></span></p>
+<p>Typeof operatörü kullanılarak bir değişkenin türü sorgulanabilir.</p>
+<p><code><strong>typeof “lifeacode”&nbsp;&nbsp; //string</strong></code></p>
+<p><code><strong>typeof “123”&nbsp;&nbsp; //number</strong></code></p>
+<p><code><strong>typeof true&nbsp;&nbsp; //boolean</strong></code></p>
+<p><code><strong>typeof [1855,4785,5412,5698]&nbsp;&nbsp; //object</strong></code></p>
+<p><code><strong>typeof {isim: ‘lifeacode’, içerik:”eğitim”}&nbsp;&nbsp; //object</strong></code></p>
+<p>&nbsp;</p>
+<p><strong><span style="color: #ff6600;">Değişkenin Veri Türünü Değiştirmek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p>JavaScript veri türleri yeni değerler atanarak kolayca değiştirilebilir. Aşağıda a değişkeni içerisinde bulunan değer yeni bir değer almıştır.</p>
+<p><strong><code>var a = // tanımsız değer</code></strong></p>
+<p><strong><code>var a= “lifeacode” // a string bir değer aldı.</code></strong></p>
+<p><strong><code>Var a= 2018 // a sayısal bir değer aldı.</code></strong></p>
+   	</div>
+
+   </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

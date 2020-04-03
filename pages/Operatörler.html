@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	 <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			
+
+<td bgcolor="#F5F5F5" align="justify" valign="top">
+			
+<center><h2><b>4.OPERATÖRLER</b></h2></center>
+<p></p><ol type="1">
+<b></b><li><b>Assignment(atama) operatörü</b><p>
+JavaScript'in(ve bütün programlama dillerinin) temel operatörü olan <b>atama</b> operatörü '='
+işaretiyle ifade edilir, işaretin sağındaki değeri(veya değişkenin değerini), solundaki değişkene atar.<br>
+'var sayi = 34 ; var sayi2 = sayi' </p>
+<b></b></li><li><b>Aritmetik operatörler</b><p>
+</p><ul type="disc"><li>'+' :Sayı değişkenleri toplamaya, string değişkenleri birbirine eklemeye yarar.<br>
+</li><li>'-' : Sayı değişkenlerde çıkartma işlemini yapar. 
+    
+</li><li>'*' : Sayı değişkenlerde çarpma işlemini yapar. 
+    
+</li><li>'/ ' : Bölme işlemi yapar. 
+    
+</li><li>'%' : Modülüs işlemi. '10%3' ifadesinin 
+    matematikteki karşılığı '10 mod 3' ifadesidir ve sonuç 1 çıkar.</li>               
+ </ul>
+  <p>
+  
+</p><table bgcolor="silver" id="table91">
+<tbody><tr> 
+       <td>&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Aritmetik operatörler&lt;/title&gt;<br>&nbsp;&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&lt;script 
+        language="JavaScript1.2"&gt;<br>&lt;!--<br>&nbsp;var 
+        toplama=11+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        //değişkenlere işlemlerin sonuçlarını atayalım<br>&nbsp;var 
+        cıkarma=10-4<br>&nbsp;var carpma=(7,32)*4<br>&nbsp;var 
+        bolme=(32,4)/(1,22)<br>&nbsp;var modul= 23%3<br>&nbsp;var 
+        hepsi=toplama+cıkarma+bolme+carpma+modul&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        //bütün değerleri 
+        toplayalım<br>&nbsp;document.write(toplama,"&lt;br&gt;",cıkarma,"&lt;br&gt;",carpma,"&lt;br&gt;",bolme,"&lt;br&gt;",modul,"&lt;br&gt;")<br> 
+        &nbsp;document.write(hepsi)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;/bulduğumuz değerleri 
+        yazdıralım&nbsp;<br>--&gt;<br>&lt;/script&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br>
+        <p></p></td></tr></tbody></table><p></p>
+<p>Aritmetik operatörlerden bahsetmişken JavaScript'in bazı kısaltmalarından bahsedelim</p>
+<ul type="disc">
+<li>'a = a + b' ifadesini kısaca 'a+=b' şeklinde yazabiliriz.
+</li><li>Aynı kısaltma diğer işlemler için de geçerlidir(a-=b; a/=b, a*=b)
+</li><li>a = a + 1 ifadesini a++; a = a - 1 ifadesini ise 
+    kısaca a-- şeklinde yazabiliriz.   
+
+
+
+
+</li></ul>
+
+
+
+<p><b></b></p></li><li><b>Karşılaştırma operatörleri</b>
+  <p></p>
+<p>Karşılaştırma operatörleri, temsil ettikleri karşılaştırmanın sonucu doğruysa true, yanlışsa false değerini verirler.
+</p><p></p><ul type="disc">
+<li>'==' : Eşit operatörü, eğer iki tarafın değeri eşitse true sonucunu verir. 
+</li><li>'!=' : Eşit değil operatörü, eğer iki tarafın değeri eşit değilse true sonucunu verir.
+</li><li>'&lt; ' : Küçüktür operatörü, sol taraf küçükse true sonucunu verir.  
+</li><li>'&gt; ' : Büyüktür operatörü, sol taraf büyükse true sonucunu verir. 
+</li><li>'&lt;=' : Küçük eşittir operatörü, sol taraf küçükse veya iki taraf eşitse true sonucunu verir. 
+</li><li>'&gt;=' : Büyük eşittir operatörü, sol taraf 
+    büyükse veya iki taraf eşitse true sonucunu verir. 
+    
+<p>       
+    Bu ve diğer operatörler için 
+    verilen&nbsp;örnekleri&nbsp;&nbsp;yeni bir HTML belgesinin body bölümüne yazın </p>       
+            
+    </li></ul>
+	<p></p><table bgcolor="silver" id="table92">
+<tbody><tr>
+	<td>&lt;pre&gt;<br>&nbsp;&lt;script 
+        language="javaScript1.2"&gt;<br>&nbsp;&lt;!--<br>&nbsp;var a=10, 
+        b=4;<br>&nbsp;&nbsp;&nbsp; document.writeln("a==b 
+        :",(a==b))<br>&nbsp;document.writeln("a!=b :", 
+        (a!=b))<br>&nbsp;document.writeln("a&amp;lt;b :", 
+        (a&lt;b))<br>&nbsp;document.writeln("a&amp;gt;b :", 
+        (a&gt;b))<br>&nbsp;document.writeln("a&amp;lt;=b :", 
+        (a&lt;=b))<br>&nbsp;document.writeln("a&amp;gt;=b :", 
+        (a&gt;=b))<br>&nbsp;--&gt;<br>&nbsp;&lt;/script&gt;<br>&nbsp;&lt;/pre&gt;</td>
+</tr>
+</tbody></table>
+
+
+<b><p></p></b></li><li><b>Şart operatörü</b> <p>
+Bu operatörü bir örnek üzerinde öğrenelim:<br>
+(a==b)? "Iki degisken esittir!":"Iki degisken esit degildir!"<br>
+Bu operatörün kullanımında parantez içerisine bir şart yazılır, ki burada o şart x ve y değişkenlerinin
+eşit olmasıdır, eğer bu şart doğruysa soru işaretinden hemen sonraki işlem, aksi takdirde
+':' işaretinden sonraki işlem yapılır.</p>
+<p></p><table bgcolor="silver" id="table93">
+<tbody><tr>
+	<td>&lt;script 
+        language="javaScript1.2"&gt;<br>&nbsp;&lt;!--<br>&nbsp;var a=10, 
+        b=4;<br>  &nbsp;&nbsp;&nbsp;varsonuc=(a!=b)?"İki değişken eşit 
+        değil!":"İki değişken 
+        eşit!"<br>&nbsp;document.write(sonuc)<br>&nbsp;--&gt;<br>&nbsp;&lt;/script&gt;</td>
+</tr>
+</tbody></table><p></p>
+
+<b><p></p></b></li><li><b>Mantıksal operatörler</b>
+  <p></p><p>
+Eğer karşılaştırmayı birden fazla durumu dikkate alarak yapacaksak mantıksal operatörleri kullanırız.
+
+</p><p></p><ul type="disc">
+<li>'&amp;&amp;' : 'And(ve)' operatörü: Koşulların hepsi 
+    doğru ise true değerini verir. 
+    
+</li><li>'|| ' : 'Or(veya)' operatörü: Koşulların en az 
+    birinin doğru olması halinde true değerini verir. 
+    
+</li><li>'! ' : 'Not' operatörü: Koşulların hepsinin yanlış 
+    olması durumunda true değerini verir.
+
+    <p></p></li></ul>
+	<table bgcolor="silver" id="table94">
+<tbody><tr>
+	<td>&lt;pre&gt;<br>&nbsp;&lt;script 
+          language="javaScript1.2"&gt;<br>&nbsp;&lt;!--<br>&nbsp;var a=10, b=4, 
+          c=4<br>&nbsp;&nbsp;&nbsp; 
+          document.writeln("")<br>&nbsp;document.writeln("a!=b 
+          &amp;amp;&amp;amp; b==c : " , "a b'den farklı ve b c'ye eşit mi? 
+          ",(a!=b &amp;&amp; b==c))<br>&nbsp;document.writeln("a==b || b==c : " 
+          ,"a b'ye veya c'ye eşit mi? ",(a==b || b==c))&nbsp; 
+          <br>&nbsp;--&gt;<br>&nbsp;&lt;/script&gt;<br>&nbsp;&lt;/pre&gt;</td>
+</tr>
+</tbody></table>
+		</td>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

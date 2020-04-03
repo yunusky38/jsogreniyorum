@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	 <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<section id="container">
+            
+
+<h1>JavaScript'te Değişkenler ve Veri Türleri</h1>
+
+<p>Bir programlama dilinin temellerini değişkenler oluşturur. Değişkenler verilerin saklandığı birimlerdir.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 690px; height: 55px;"> <script>
+    var deneme = "zinzin";
+</script>   </textarea>
+
+<p>Değişkenler <span class="emphasis">veri türü</span> ve <span class="emphasis">değer</span> olmak üzere iki temel unsurdan oluşur. Örneğin; yukarıdaki örneğimizde değişken adımız <span class="emphasis">deneme</span>'dir. Veri türümüz <span class="emphasis">string</span>'dir. Yani metinseldir. Değerimiz ise <span class="emphasis">zinzin</span>'dir.</p>
+
+<p>Değişken ismi tanımlanırken bazı kurallar vardır:</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 811px; height: 96px;"> <script>
+    var yağmur = null; // Değişken isimlerinde Türkçe karakter kullanılmaz.
+    var Deneme = null; // Büyük - küçük harf ayrımı vardır. Deneme ile deneme aynı değişken değildir.
+    var 300spartali = null; // Değişken isimleri nümerik değerler ile başlayamaz.
+</script>   </textarea>
+
+<p>Değişken adını vermeden önce tanımladığımız <span class="emphasis">var</span> ifadesi <em>variable</em>'dan gelmektedir ve dilimizde <em>değişken</em> anlamındadır.</p>
+
+<h2>Veri Türleri</h2>
+
+<p>JavaScript'te değişkenler tanımlanırken herhangi bir veri türü belirtilmez. Hangi veri türü kullanıldığını değişkenin değerinden anlayabiliriz.</p>
+
+<p><span class="emphasis"><strong>String:</strong></span> Metinsel veri türüdür.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 460px; height: 82px;"> <script>
+    var deneme00 = "zinzinzibidi";
+    var deneme01 = "1234";
+    var deneme02 = '9Cdeneme';
+</script> </textarea>
+
+<p>Bir değişkeni string olarak tanımlayabilmek için = operatöründen sonra tırnak işareti içerisinde değişkenin değerini yazmalıyız. Yukarıdaki örnekte deneme00 adlı bir değişken tanımladık ve değerini zinzinzibidi şeklinde string olarak belirledik. deneme01 değişkeni de string'dir. Çünkü değeri sayısal olmasına rağmen tırnak işaretleri içinde yazdık. Tek tırnak ('') işareti içerisine yazılan değerler de string olarak algılanır.</p>
+
+<p><span class="emphasis"><strong>Number:</strong></span> Sayısal veri türüdür.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 321px; height: 76px;"> <script>
+    var deneme03 = 12;  // Tamsayı
+    var deneme04 = 2.3; // Ondalıklı sayı
+</script> </textarea>
+
+<p>JavaScript'te tamsayı, ondalıklı, 8 ve 16 tabanlı olmak üzere dört farklı sayısal veri türü oluşturulabilir. = (eşittir) operatöründen sonra sayısal değerlerin yazılması yeterlidir.</p>
+
+<p><span class="emphasis"><strong>Boolean:</strong></span> Mantıksal veri türüdür.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 280px; height: 75px;"> <script>
+    var deneme05 = true;
+    var deneme06 = false;
+</script>  </textarea>
+
+<p>Değişkenin değeri ya true (doğru) ya da false (yanlış) olabilir.</p>
+
+<p><span class="emphasis"><strong>Array (Dizi):</strong></span> Grup halinde saklanmak istenen verilerin barındırıldığı veri türüdür.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 355px; height: 72px;"> <script>
+    var deneme07 = new Array("zibidi","zinzin","300",42,16);
+</script> </textarea>
+
+<p>deneme07 adlı değişken bir dizidir. Çünkü içerisinde beş farklı veri vardır.</p>
+
+<p><span class="emphasis"><strong>Undefined ve Null:</strong></span> <em>undefined</em> dilimizde <em>tanımsız</em> ve <em>null</em> ise <em>boş</em> anlamındadır. Tanımlanmamış değişkenler için undefined ve boş değişkenler için null kullanılır.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 431px; height: 74px;"> <script>
+    var deneme08;        //undefined
+    var deneme09 = null; // null
+</script>   </textarea>
+
+<p>deneme08 değişkeni tanımsız, deneme09 ise boş bir değişkendir.</p>
+
+<h2>Veri Türü Dönüşümleri</h2>
+
+<p>JavaScript'te bir veri türünü başka bir türe dönüştürmek (convert etmek) oldukça basit bir işlemdir.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 258px; height: 76px;"> <script>
+    var deneme10 = "deneme";
+    var deneme10 = 1234;
+</script>  </textarea>
+
+<p>Örneğin; yukarıdaki işlemde deneme10 adlı değişkenimiz başlangıçta string'di. Daha sonra 1234 değerleri ile tanımlayarak onu number veri türüne dönüştürmüş olduk.</p>
+
+<h2>write( ) fonksiyonu</h2>
+
+<p>write( ) fonksiyonu değişkenlerin sayfa içerisinde yazdırılmasını sağlar. Şimdi denemeProjemiz'i çalıştıralım ve aşağıdaki kodları yazalım. Tabi önce Home klasörü altındaki index.cshtml'de yazılı olan "Bu bir deneme yazısıdır." ifadesini silin.</p>
+
+<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 419px; height: 300px;"> <!DOCTYPE HTML>
+<html>
+        <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title</title>
+        <script>
+            var deneme11 = "Bu bir deneme yazısıdır.";
+            document.write(deneme11);
+        </script>
+    </head>
+        <body>
+        <div>
+            @RenderBody()
+        </div>
+    </body>
+</html> </textarea>
+
+<p>deneme11 adlı yeni bir değişken tanımladık ve değerini yazdık. Buradaki <span class="emphasis">document</span> ifadesi HTML'de <span class="emphasis">body</span>'i simgeler. Body'in içerisine çıktımızın yazılmasını istedik. Projemizi çalıştırdığımızda aşağıdaki gibi bir görüntü elde etmeliyiz.</p>
+
+
+        </section>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

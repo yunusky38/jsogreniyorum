@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	  <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<td bgcolor="#F5F5F5" align="justify" valign="top">
+			
+
+<center><h2><b>7.DÖNGÜLER</b></h2></center><br>
+	<p>Döngüler, kendilerine verilen koşul gerçeklendiği sürece aynı işi yapmaya devam 
+	eden fonksiyonlardır. Bu iş ,örneğin 1'den 100'e kadar saymak olabilir. Bu durumda bir sayaç 
+	oluşturulur. Bu sayacın değeri 1'den başlatılır, sayaca 100'e kadar sayması söylenir, 
+	ve her adımda sayacın değeri ekrana yazdırılır. Böylece 2 satırda 100 satırlık iş
+	yaptırmış oluruz. JavaScript bize <b>for, while, do...while</b> ve <b>switch</b> döngülerini kullanma imkanı verir. 
+	</p>
+	<p></p><ol type="1">
+	<b></b><li><b>For döngüsü</b>
+	<p>For döngüsünün yazılışı aşağıdaki gibidir: </p>
+	<p></p><table bgcolor="silver" id="table3">
+<tbody><tr>
+	<td>for (sayac = 1 ; sayac&nbsp;&lt;  101 ; sayac++)<br>{<br>Bu iş 100 kez yapılacak!<br>)<br>
+	
+	
+	</td>
+</tr>
+</tbody></table><p></p>
+<p>Yukarıdaki döngüyle browser'a sayac değişkeninin değerini birer birer(sayac++),1'den(sayac= 1) 100'ekadar(sayac&lt;101) 
+arttırmasını ve her seferinde küme parantezi içinde belirtilen işi yapmasını söyledik.
+Burada 1 ve 101 yerine istenilen değer gelebilir,ayrıca artış değerini de istediğiniz gibi
+değiştirebilirsiniz( artışı n yapmak için sayac+=n ifadesini kullanın).Sayac değişkeninin adı da istediğiniz
+herhangi bir değişken adı olabilir. Yine if ifadesinde olduğu gibi döngüye yapacak tek bir iş
+verirsek küme parantezi kullanmaya gerek yok.</p>
+<p></p><table bgcolor="silver" id="table4">
+<tbody><tr> 
+        <td>&lt;html&gt;<br>&lt;head&gt;&nbsp;<br>&lt;title&gt;Untitled&lt;/title&gt;&nbsp;<br>&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&lt;script 
+        language="JavaScript1.2"&gt;<br>document.write("1-10 arası sayıların 
+        kareleri ve küpleri&lt;p&gt;")<br>for(i=0; i&lt;10 ; 
+        i++)<br>document.write(i," ", i*i," ",i*i*i,"&lt;br&gt;") 
+        <br>&nbsp;&lt;/script&gt;&nbsp;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+<b></b></li><li><b>While: Şartlı döngü</b>
+<p>For' dan farklı olarak while dongüsünde bir şart verilir, while 'da bu şart gerçeklendiği sürece while,
+kendisine verilen işi yapar.</p>
+<p></p><table bgcolor="silver" id="table5">
+<tbody><tr>
+	<td>while(şart)<br>{<br>Yapılacak işler<br>}</td>
+</tr>
+</tbody></table><p></p>
+<p>İşte size biraz ısrarcı bir script!</p>
+<p></p><table bgcolor="silver" id="table6">
+<tbody><tr>
+	<td>&lt;html&gt;<br> 
+        &lt;head&gt;&nbsp;<br>&lt;title&gt;Untitled&lt;/title&gt;&lt;BR&gt;&nbsp;&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&lt;script 
+        language="JavaScript1.2"&gt;<br>var 
+        cevap=false<br>while(cevap==false)<br>cevap=confirm("Siteme tekrar 
+        geleceksiniz değil mi 
+        !?")<br>&lt;/script&gt;&nbsp;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p>
+<b></b></li><li><b>Do...while</b>
+<p>Bazen karşımıza öyle bir durum çıkar ki, koşullar ne olursa olsun önce bir iş yaptırmamız, 
+sonra bir şart belirtip bu şart gerçeklendiği sürece işin yapılmasını sağlamamız gerekir.
+Mesela bir mail list'imiz var ve ziyaretçiye bu listeye üye olmak isteyip istemediğini soracağız.
+Fakat istiyoruz ki bu ziyaretçi arkadaşlarını da listemize kaydettirsin. Bu işin içinden do...while
+döngüsünün yapısının altındaki örneği yazarak çıkabiliriz...</p>
+<p></p><table border="1" id="table7">
+<tbody><tr>
+	<td>do<br>{<br>En az bir kere yapılacak iş<br>}<br>while(şart)<br>Şart gerçeklenmediğinde yapılacak işler</td>
+</tr>
+</tbody></table>
+<p></p>
+<p></p><table bgcolor="silver" id="table8">
+<tbody><tr>
+	<td>&lt;html&gt;<br>&lt;head&gt;&lt; 
+        BR&gt;&nbsp;&lt;title&gt;do...while&lt;/title&gt;&lt;BR&gt;&nbsp;&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&lt;script 
+        language="JavaScript1.2"&gt;<br>var sayac=0<br>var ePostalar=" 
+        "<br>do{<br>var ePosta=prompt("Email listesi üelik 
+        başvurusu","e-mailiniz")<br>var cevap=confirm("Başka birini daha üye 
+        yapmak ister misiniz?")<br>sayac++<br>ePostalar+=(ePosta+", 
+        ")<br>}<br>while(cevap==true)<br>alert("Adresleri"+ePostalar+"olmak 
+        üzere "+sayac+" kişi kaydedilmiştir. Tesekkür 
+        ederiz!")<br>&lt;/script&gt;&nbsp;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table>
+<p></p>
+<b></b></li><li><b>Break ve Continue ifadeleri</b>
+        <p></p>Bu ifadeler dönguler içinde kullanılırlar.Bir döngü içerisinde 
+        break ifadesini kullandığımız noktada döngü koşullar ne olursa olsun 
+        sonlanır. Continue ifadesi ise kullanıldığı yerde döngünün o adımının 
+        atlanmasını sağlar. Örneğin 0'dan 100'e kadar sayan bir döngüye
+        <p></p>
+<p><b>(if sayac==23) continue</b></p>
+<p>şeklinde bir ifade eklersek ekranda 23 hariç, 1'den 100'e kadar olan sayıları görürüz.
+Continue yerine break yazarsak ise, döngü 23'üncü adımın sonunda kesilir,yani ekranda 1-23
+arası sayıları görürüz. Yazdığımız döngüler üzerinde bu ifadeleri deneyerek kullanımlarını daha 
+iyi anlayabilirsiniz.</p>
+
+
+
+
+<b></b></li><li><b>Switch</b><p>
+Switch fonksiyonu diğer döngülerden biraz farklıdır. Switch fonksiyonunda durumlar(case) tanımlarız,
+ve her durum için yapılacak işi tanımladıktan sonra döngüden break komutuyla çıkarız. Örneğin ziyaretçiden
+ismini ve cinsiyetini öğrenip ona bay/bayan isim şekllinde hitab etmek istiyorsunuz.Aşağıdaki
+örneği yazarak bu işi <b>switch</b> komutuyla yapablirsiniz.</p>
+  
+	<p></p><table bgcolor="silver" id="table9">
+<tbody><tr>
+	<td>
+        &lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&lt;title&gt;do...while&lt;/title&gt;&lt; 
+        BR&gt;&nbsp;&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&lt;script 
+        language="JavaScript1.2"&gt;<br>var isim=prompt("İsminiz","Buraya 
+        yazın")<br>var 
+        cinsiyet=prompt("cinsiyetiniz","k,e")<br>switch(cinsiyet)<br>{<br>case 
+        "e":<br>case "E":<br>alert("Merhaba Bay "+isim)<br>break<p>case "k":<br>case "K":<br>alert("Merhaba Bayan "+isim)<br>break</p>
+        <p>default: alert("Lütfen cisiyetinizi doğru 
+        yazın!")<br>}<br>&lt;/script&gt;&nbsp;<br>&lt;/body&gt;<br>&lt;/html&gt;</p></td>
+</tr>
+</tbody></table><p></p></li></ol>
+		</td>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

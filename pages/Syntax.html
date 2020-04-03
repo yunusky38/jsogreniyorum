@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	 <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<h2>JavaScript Yazım Kuralları</h2>
+			<p>JavaScript komutları içerisinde belirli bir işlemi yapan en küçük kod parçasına kod denir.</p>
+			<p>JavaScript kodları noktalı virgülle sonlanır.</p>
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 232px; height: 67px;"> var a, b, c;
+a = 5;
+b = 6;
+c = a + b; </textarea>
+			<p>JavaScript kodları değişkenler, operatörler, deyimler, anahtar kelimeler ve yorumlardan oluşur.</p>
+			<p>JavaScript <strong>sabit değerler</strong> ve <strong>değişken değerler</strong> olmak üzere iki farklı değer türü yazılabilir.</p>
+			<p>Sabit değerler herhangi bir değişkende saklanmadan yazılan değerlerdir.</p>
+			<p>Sabit değerli rakamlar herhangi bir tırnak işareti eklenmeden yazılır.</p>
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 216px; height: 38px;"> 14.53 
+1453 </textarea>
+			<br>
+
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 216px; height: 65px;"> <script>
+  alert(14.53);
+</script> </textarea>
+			<p>Sabit değerli metinler tek veya çift tırnak arasında yazılır.</p>
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft"style="margin: 0px; width: 233px; height: 72px;"> "Merhaba JavaScript"
+'Merhaba JavaScript' </textarea>
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 242px; height: 72px;"> <script>
+  alert("Merhaba JavaScript");
+</script> </textarea>
+			
+			<h2>Değişken değerler</h2>
+			<p>Programlama dillerinde değişkenler veri depolamak için kullanılır.</p>
+			<p>JavaScript değişken tanımlamak için <strong>var</strong> anahtar kelimesi kullanılır.</p>
+			<p>Tanımlanan değişkene değer atamak için eşit işareti kullanılır.</p>
+			<p>Örnekte <strong>x</strong> değişken olarak tanımlanmış ve daha sonra <strong>x</strong> değişkenine <strong>1453</strong> değeri atanmıştır.</p>
+			
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 225px; height: 47px;"> var x;
+x = 1453;   </textarea>
+
+<h2>Operatörler</h2>
+<p>JavaScript ile hesaplama işlemleri için aritmetik operatörler kullanılır.</p>
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 217px; height: 100px;"> <script>
+  var x;
+  x = (5 + 1) * 10;
+  alert(x);
+</script>   </textarea>
+
+<h2>Deyimler</h2>
+<p>JavaScript deyimleri değerler, değişkenler ve operatörlerle yeni bir değer üretilmesidir.</p>
+<p>Örneğin iki değerin çarpımı ile yeni bir değer elde edilmiştir.</p>
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 238px; height: 65px;"><script>
+  alert(5 * 10);
+</script>    </textarea>
+<p>Deyimler değişken değer alabilir.</p>
+
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 242px; height: 91px;">  <script>
+  var x;
+  x = 5;
+  alert(x * 10);
+</script>  </textarea>
+<p>Deyimler metin türünde değer alabilir.</p>
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 280px; height: 81px;"> <script>
+  alert("Merhaba" + " " + "Dünya");
+</script>   </textarea>
+<h2>Anahtar kelimeler</h2>
+<p>JavaScript anahtar kelimeler talimat vermek için kullanılır.</p>
+<p>JavaScript <strong>var</strong> anahtar kelimesi tarayıcıya yeni değişken oluşturma talimatı verir.</p>
+
+
+
+			<textarea name="metin_kutusu_1" rows="10" cols="30" wrap="soft" style="margin: 0px; width: 243px; height: 122px;"> <script>
+  var a, b, c;
+  a = 5;
+  b = 6;
+  c = a + b;
+  alert(c);
+</script>   </textarea>
+
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+

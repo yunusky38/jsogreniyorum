@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+        <!-- üst menü kısmı-->
+        <div id="header">
+                <div id="logo">
+                
+                </div>
+                <div id="ustmenu">
+                        <div id="tabs">
+                                 <ul>
+                                         <li><a href="../index.html"><span>Anasayfa</span></a></li>
+                                         <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+                                
+                                         
+                                 </ul>
+                        </div>
+                </div>
+        </div> 
+        <!--orta kısım içerik kısmı-->
+        <div id='icerik'>
+                <div id="sidebar">
+                        <div id="menu">
+                          <ul>
+                     <li><a href="../index.html">Anasayfa</a></li>
+                     <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+                     <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+                     <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+                     <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+                     <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+                     <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+                     <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+                     <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+                     <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+                     <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+                     <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+                     <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+                     <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+                                  
+                         </ul>
+                                </div>
+                        </div>
+                        <div id="content">
+                        <td bgcolor="#F5F5F5" align="justify" valign="top">
+                        
+<center><h2><b>6.KOŞUL İFADELERİ</b></h2></center><br>
+<p>JavaScript ile program yazarken program akışının her zaman yukarıdan aşağıya olmasını istemeyebiliriz.
+Bu durumda koşul ifadeleri devreye girer. Bu ifadelerle browser'a programın bir noktasında 
+bir koşul belirtip, bu koşul doğruysa bir iş yapmasını, doğru değilse başka bir iş yapmasını söyleyebiliriz.
+Ya da daha karmaşık durumlar tanımlayabiliriz. Bütün bu işleri koşul ifadeleri 'if' ve 'else'
+'i yerinde kullanarak başarabiliriz.</p>
+<ol type="1">
+<b></b><li><b>If ifadesi</b>
+<p>If ifadesi, eğer verilen koşul doğruysa true, değilse false değerini verir. Aşağıda
+if'in kullanımını görüyorsunuz.</p>
+<p></p><table bgcolor="silver" id="table3">
+<tbody><tr>
+        <td>
+        if (koşul)<br>{ <br>Koşul sağlanıyorsa yapılacaklar<br>}</td>
+</tr>
+</tbody></table><p></p>
+<p></p>
+<b></b></li><li><b>İf...else</b><br>
+<p>If ifadesiyle bir veye birkaç koşul belirttiğimizde, oluşabilecek bir durum da 
+bu koşul veya koşullardan hiçbirinin gerçeklenmemesidir. İşte bu durumu else ifadesiyle belirtiriz.
+Yani if ile browser'a 'verdiğim koşul doğruysa şunu yap', else ifadesiyle 'aksi takdirde şunu yap' deriz.
+</p>
+<p>If ve else ifadelerinin kullanımları aşağıdaki gibidir.</p>
+<p>
+</p><table bgcolor="silver" id="table4"> 
+<tbody><tr>
+        <td>if (koşul)<br>{<br>koşul doğruysa yapılacak iş<br>}<br>else<br>{<br>Bunun dışındaki her durumda yapılacak iş<br>}</td>
+</tr>
+</tbody></table>
+<p></p>
+<p>Eğer birden fazla koşul belirtmek istersek ilk if'den sora <b>else if</b> ifadesini kullabilir ve bu koşullarda 
+yapılacak işleri belirleyebiliriz. Bunun anlamı şudur: 'Eğer(if) a şartı gerçekleniyorsa şunu yap, bunun dışında(else if) eğer b şartı gerçekleniyorsa şunu yap,bunların dışındaki 
+durunmlarda(else) şunu yap!' .Bu durumda else ifadesi verilen koşulların hiçbirinin gerçeklenmediği durumları kapsar. Bu karışık 
+ifadeyi ve koşul yapısını aşağıdaki örneğe bakarak  anlayabilirsiniz...
+</p>
+<p></p><table bgcolor="silver" id="table5">
+<tbody><tr>
+        <td>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&lt;title&gt;Untitled&lt;/title&gt;<br>&nbsp;&lt;META 
+        content=text/html;CHARSET=iso-8859-9 
+        http-equiv=Content-Type&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;<br>&nbsp;&lt;script 
+        language="javaScript1.2"&gt;<br>&nbsp;var cevap1=prompt("54 + 21 = 
+        ?","cevap?")&nbsp;//İlk soruya verilecek cevabı cevap1'e atıyoruz 
+        <br>&nbsp;var cevap2=prompt("20 / 4=&nbsp;?","cevap?")&nbsp;&nbsp;&nbsp; 
+        //2. soruya verilecek cevabı cevap2'e atıyoruz <br>&nbsp;if(cevap1==75 
+        &amp;&amp; cevap2==5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Eğer 1. cevap 75'e, 
+        2.cevap 5'e eşit ise... <br>&nbsp;alert("Cevapların ikisi de 
+        doğru")&nbsp;&nbsp;&nbsp;//Bu mesajı yaz<br>&nbsp;&nbsp;&nbsp; 
+        <br>&nbsp;else if(cevap1!=75 &amp;&amp; 
+        cevap2!=5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Eğer sadece cevap1 doğruysa... 
+        <br>&nbsp;alert("Cevapların ikisi de yanlış")&nbsp;&nbsp;&nbsp; //Bunu 
+        yaz<br>&nbsp;<br>&nbsp;else&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Yukarıdaki 
+        iki durumun dışındaki bir 
+        durumda,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Yani 
+        sadece bir cevabın doğru olması halinde&nbsp;<br>&nbsp;alert("Cevapların 
+        sadece biri doğru")&nbsp;&nbsp;//Bunu 
+        yaz!<br>&nbsp;&lt;/script&gt;<br>&nbsp;<br>&lt;/body&gt;<br>&lt;/html&gt;</td>
+</tr>
+</tbody></table><p></p></li>
+<p>Bu örnekte, tanımda kullandığımız küme parantezlerini '{}' kullanmadık. Bunun nedeni koşul
+doğruysa yapılacak tek bir iş vermemizdir. Bu durumda JavaScript bu işin hemen üstündeki if'e
+ait olduğunu anlar. Fakat koşul doğruysa birden fazla iş yaptıracaksak bunları küme parantezleri
+içinde vermemiz gerekir.
+
+
+</p></ol>
+                </td>
+                        </div>
+                </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id='a'>
+	<!-- üst menü kısmı-->
+	<div id="header">
+		<div id="logo">
+		
+		</div>
+		<div id="ustmenu">
+			<div id="tabs">
+ 				 <ul>
+   					 <li><a href="../index.html"><span>Anasayfa</span></a></li>
+  					 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+    				
+  					 
+ 				 </ul>
+			</div>
+		</div>
+	</div> 
+	<!--orta kısım içerik kısmı-->
+	<div id='icerik'>
+		<div id="sidebar">
+			<div id="menu">
+			  <ul>
+  				 	  <li><a href="../index.html">Anasayfa</a></li>
+  				 	 <li><a href="JavaScript-Giriş.html"><span>JavaScript Giriş</span></a></li>
+  				 	 <li><a href="Syntax.html"><span>JavaScript Yazılım (Syntax) yapısı</span></a></li>
+    				 <li><a href="Değişkenler.html"><span>Değişkenler</span></a></li>
+    				 <li><a href="Operatörler.html"><span>Operatörler</span></a></li>
+   					 <li><a href="Operatörler.html"><span>Aritmetik</span></a></li>
+  					 <li><a href="Veri-Tipleri.html"><span>Veri Tipleri</span></a></li>
+  					 <li><a href="Fonksiyon-Yapısı.html"><span>Fonksiyon Yapısı</span></a></li>
+    				 <li><a href="Olaylar-(Events).html"><span>Olaylar (Events)</span></a></li>
+   					 <li><a href="Dizi-İşlemleri.html"><span>Diziler ve Diziİşlemleri</span></a></li>
+   					 <li><a href="koşul-yapıları.html"><span>If koşul yapıları</span></a></li>
+    				 <li><a href="Döngüler.html"><span>Döngüler</span></a></li>
+   					 <li><a href="Tip-Dönüşümleri.html"><span>Tip Dönüşümleri</span></a></li>
+  					 <li><a href="mimarisi.html"><span>Çalışma yapısı ve genel mimarisi</span></a></li>
+  				  
+ 			 </ul>
+				</div>
+			</div>
+			<div id="content">
+			<td bgcolor="#F5F5F5" align="justify" valign="top">
+
+
+<center><h2><b>8.FONKSİYON KAVRAMI</b></h2></center><br>
+<p>JavaScript ile program yazarken bu programın birçok iş yapmasını isteyebilirsiniz. Ayrıca
+bu işlerin belli zamanlarda, belli durumlarda yapılması da gerekebilir. Bu durumda yapılacak
+işler için yazılan kodları foksiyonlar şeklinde gruplayıp yeri geldiğinde çağırabiliriz.
+Mesela <b>kup()</b> isimli bir fonksiyon tanımlayıp, bu fonksiyona göndereceğimiz argümanın kübünü verecek
+kodlar yazabilir, sonra bu fonksiyona  programın değişik yerlerinde farklı değerler gönderip,
+bu değerlerin kübünü buldurtabiliriz. Fonksiyonlar aşağıdaki gibi yazılır:</p>
+<p></p><table bgcolor="silver" id="table3">
+<tbody><tr>
+	<td>function(argüman1, argüman2, argüman3...)<br>{<br>yapılacak işler<br>}</td>
+</tr>
+</tbody></table>
+<p></p>	
+<p>Fonksiyonları <b>head bölümüne</b> yazıp gerektiği zaman çağırmanız hem kodlarınızın düzenli olmasını,
+hem de hızlı çalışmasını sağlar. Şimdi bir örnekle fonksiyonları tanıyalım</p>
+<p></p><table bgcolor="silver" id="table4">
+<tbody><tr>
+	<td>&lt;html&gt;<br>&lt;head&gt;<br> 
+       &nbsp;&lt;title&gt;Fonksiyonlar&lt;/title&gt;<br> 
+      &nbsp;&lt;METAcontent=text/html;CHARSET=iso-8859-9 
+      http-equiv=Content-Type&gt;<br>&lt;script 
+      language="JavaScript1.2"&gt;<br>&lt;!--<br>function cd(adet)<br>{<br>var 
+      tutar1=adet*9000000<br>return tutar1<br>}<br>function 
+      kaset(adet)<br>{<br>var tutar2=adet*5000000<br>return 
+      tutar2<br>}<br>--&gt;<br>&lt;/script&gt;&nbsp;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;script 
+      language="JavaScript1.2"&gt;<br>&lt;!--<br>var cdAdet=prompt("Kaç CD 
+      alacaksınız?","1")<br>var kAdet=prompt("Kaç kaset 
+      alacaksınız?","1")<br>var toplamTutar= 
+      cd(cdAdet)+kaset(kAdet)<br>alert("Borcunuz 
+      "+toplamTutar+".-TL")<br>--&gt;<br>&lt;/script&gt;&nbsp;<br>&lt;/body&gt;<br>&lt;/html&gt;<br></td>
+</tr>
+</tbody></table><p></p>
+<p>Şimdi bu örneği inceleyelim: Önce head bölümünde 'cd' isimli bir fonksiyon tanımladık.Bu 
+fonksiyona keyfi olarak fiyat argümanını vedik. Sonra 'tutar1' isimli değişkene, 'fonksiyona 
+gönderilecek değer' * 9000000 değerini atadık. Aynı şekilde bir kaset fonksiyonu yazdık. Body bölümüne 
+ geçelim :Kullanıcıdan aldığımız değerleri kAdet ve cdAdet değişkenlerine atayıp, bu değerleri
+ head bölümündeki ilgili fonksiyonlara gönderdik. Fonksiyonlar istediğimiz hesabı yaptı ve 'return'
+ ifadesiyle belirttiğimiz üzere hesaplanan değerleri tekrar body bölümüne gönderdi. Sonra bu iki değeri 
+ toplayıp ekrana yazdırdık.</p>
+ 	<p>Bu noktada bu zamana kadar kullandığımız prompt(),alert(),if(),for()... gibi ifadelerin
+	aslında birer fonksiyon olduğuklarını açıkça görebilirsiniz. Bu fonksiyonların bizim yazdıklarımızdan farkı şudur:
+	Örneğin prompt fonksiyonunun yapacağı işi belirtmemize gerek yoktur, bu fonksiyonun tanımı
+	browser'ınızın dosyalarında mevcuttur. Bu şekilde istediğimiz zaman bu fonksiyonu çağırıp 
+	kullanabiliriz, böyle fonksiyonlara <b>metod </b>denir.</p>
+		</td>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
